@@ -6,13 +6,13 @@ Angular2 decorator to sync properties automatically from/to LocalStorage or Sess
 
 1. `npm install --save angular2-storage-sync`
 2. Use in your component:
-    ```typescript
+```typescript
 		import { StorageSync, StorageStrategy } from 'angular2-storage-sync';
 		  export class AppComponent {
 			 @StorageSync('rememberMe') remember: boolean = false;
 			 @StorageSync(null, StorageStrategy.Session) items: Array<Object> = [];
 		  }
-    ```
+```
 
 The @StorageSync expects two params:
 1. Custom key - the default is the property name
