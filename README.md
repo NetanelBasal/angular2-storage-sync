@@ -15,7 +15,7 @@ export class AppComponent {
 }
 ```
 
-The @StorageSync expects two params:
+### The @StorageSync expects two params:
 1. Custom key - the default is the property name.
 2. StorageStrategy - Local or Session - default to LocalStorage.
 
