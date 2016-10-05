@@ -1,0 +1,9 @@
+
+<input type="checkbox"  [(ngModel)]="remember"> Remember me
+
+<button (click)="setItems()">Set items</button>
+<ul>
+  <li *ngFor="let item of items">
+    {{item.id}}
+  </li>
+</ul>
