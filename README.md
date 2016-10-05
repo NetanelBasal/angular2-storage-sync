@@ -27,18 +27,20 @@ Define always a default value at the property you are using `@StorageSync`.
 
 ```javascript
 @Component({
-    selector: 'storage-app',
-    template: 
-       <input type="checkbox"  [(ngModel)]="remember"> Remember me
-       <button (click)="setItems()">Set items</button>
-        <ul>
-          <li *ngFor="let item of items">
-            {{item.id}}
-          </li>
-        </ul>
+  selector: 'storage-app',
+  template: 
+    <input type="checkbox"  [(ngModel)]="remember"> Remember me
+    <button (click)="setItems()">Set items</button>
+    <ul>
+      <li *ngFor="let item of items">
+       {{item.id}}
+      </li>
+    </ul>
 })
+
 export class AppComponent {
   @StorageSync('rememberMe') remember: boolean = false;
+  
   @StorageSync(null, StorageStrategy.Session) items: Array<Object> = [];
 
   setItems() {
