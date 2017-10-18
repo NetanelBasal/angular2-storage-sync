@@ -1,8 +1,10 @@
-# Angular2 Storage Sync
+# Deprecated! Do Not Use!
+
+### Angular2 Storage Sync
 
 The Angular2 Storage Sync is an Angular2 decorator to sync properties automatically from/to LocalStorage or SessionStorage.
 
-## Use
+#### Use
 
 1. `cd` to the root of your app and run `npm install --save angular2-storage-sync`
 OR add `"angular2-storage-sync": "^0.1.0"` to your package.json file and then `cd` to the root of your app and run `npm install`
@@ -17,7 +19,7 @@ export class AppComponent {
 }
 ```
 
-### The @StorageSync decorator expects two params:
+##### The @StorageSync decorator expects two params:
 1. Custom key - the default is the property name.
 2. StorageStrategy - Local or Session - defaults to LocalStorage.
 
@@ -25,7 +27,7 @@ export class AppComponent {
 Always define a default value for the properties you are using in the `@StorageSync` lines.
 
 
-## Example
+##### Example
 
 ```javascript
 @Component({
